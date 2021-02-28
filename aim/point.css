@@ -1,0 +1,47 @@
+.body{
+    overflow-x: hidden;
+  
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+  }
+.heading
+{
+    font-size: 35px;
+    color: white;
+    position: relative;
+    left: 510px;
+    border-color: rgb(19, 153, 19);
+    background-color:rgb(19, 153, 19) ;
+    width: 13%;
+}
+
+.contact
+{
+    font-size: 15px;
+}
+  footer{
+    background-color: white;
+    color: black;
+    padding: 0.5rem 0 2rem;
+    margin-top: 0.5rem;
+  }
+  footer img{
+    height: 10rem;
+  
+  }
+  footer a{
+    color: black;
+  }
+  footer svg.svg-inline--fa{
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+  }
+  footer .svg-inline--fa:hover{
+    color: rgb(19, 153, 19)  !important;
+  }
+  hr.socket{
+    width: 100%;
+    border-top: .2rem solid #ffffff;
+    margin-top: 3rem;
+  }
+  
