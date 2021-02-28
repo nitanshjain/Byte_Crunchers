@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <!-- Header -->
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn" ></i>
+        </label>
+        
+        <div class="right_area">
+            <a href="./register.html" class="logout_btn">Logout</a>
+        </div>
+    </header>
+
+    <!-- Header -->
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <center>
+            <img src="./img/img/user.jpg" class="profile_img" alt="">
+            <h4>Ben David</h4>
+        </center>
+        <a href="./homepage.html"><i class="fas fa-house-user"></i><span>Home Page</span></a>
+        <a href="./dash/index.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="#"><i class="fas fa-cogs"></i><span>About Us</span></a>
+        <a href="#"><i class="fas fa-coins"></i><span>Redeem</span></a>
+        <a href="./map.html"><i class="fas fa-globe-americas"></i><span>Locate</span></a>
+        <a href="./test.html"><i class="fas fa-info-circle"></i><span>Handbook</span></a>
+    </div>
+
+    <div class="map" id="map"></div>
+
+    <script>
+        function initMap() {
+            var link = {
+                info: "Nearest Bin",
+                lat: 32.711280,
+                long: 74.865670,
+            }
+
+            var thapar = {
+                info: "Nearest Bin",
+                lat: 30.352974,
+                long: 76.364700,
+            }
+
+            var india = {
+                info: "Nearest Bin",
+                lat: 28.610001,
+                long: 77.232147,
+            }
+
+            var locations = [
+                [link.info, link.lat, link.long, 0],
+                [thapar.info, thapar.lat, thapar.long, 1],
+                [india.info, india.lat, india.long, 2],
+            ]
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: new google.maps.LatLng(30.352974,76.364700),
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+            })
+
+            var infowindow = new google.maps.InfoWindow({})
+
+            var marker, i
+
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                map: map,
+                })
+
+                google.maps.event.addListener(
+                marker,
+                'click',
+                (function (marker, i) {
+                    return function () {
+                    infowindow.setContent(locations[i][0])
+                    infowindow.open(map, marker)
+                    }
+                })(marker, i))
+            }
+        }
+    </script>
+        
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAopu4fhUGezCy83kXJFNG1vA4UYOLZcoY&callback=initMap">
+    </script>
+</body>
+</html>
