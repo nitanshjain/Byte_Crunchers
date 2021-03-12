@@ -1,17 +1,18 @@
-.body{
+body{
     overflow-x: hidden;
-  
     font-family: 'Lato', sans-serif;
     color: #505962;
-  }
+}
+
+
+
 .heading
 {
-    font-size: 35px;
-    color: white;
+    font-size: 50px;
+    color: rgb(26, 83, 21);
     position: relative;
-    left: 510px;
-    border-color: rgb(19, 153, 19);
-    background-color:rgb(19, 153, 19) ;
+    left: 500px;
+    padding: auto;
     width: 13%;
 }
 
@@ -19,29 +20,34 @@
 {
     font-size: 15px;
 }
-  footer{
+
+footer{
     background-color: white;
     color: black;
     padding: 0.5rem 0 2rem;
     margin-top: 0.5rem;
-  }
-  footer img{
-    height: 10rem;
-  
-  }
-  footer a{
+}
+
+footer img{
+    height: 10rem;  
+}
+
+footer a{
     color: black;
-  }
-  footer svg.svg-inline--fa{
+}
+
+footer svg.svg-inline--fa{
     font-size: 1.6rem;
     margin: 1.2rem .5rem 0 0;
-  }
-  footer .svg-inline--fa:hover{
+}
+
+footer .svg-inline--fa:hover{
     color: rgb(19, 153, 19)  !important;
-  }
-  hr.socket{
+}
+
+hr.socket{
     width: 100%;
     border-top: .2rem solid #ffffff;
     margin-top: 3rem;
-  }
+}
   

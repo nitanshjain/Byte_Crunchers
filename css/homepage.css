@@ -30,7 +30,6 @@ header{
     margin-right: 40px;
     border-radius: 2px;
     font-size: 15px;
-    /* font-weight: 600; */
     color: rgb(0, 0, 0);
     transition: 0.5s;
 }
@@ -78,7 +77,6 @@ header{
     padding-left: 40px;
     box-sizing: border-box;
     transition: 0.5s;
-    /* transition-property: background */
 }
 
 .sidebar a:hover{
@@ -94,7 +92,6 @@ label #sidebar_btn{
     color: #fff;
     position: fixed;
     cursor: pointer;
-    /* left: 300px; */
     font-size: 20px;
     margin: 5px 0;
     transition: 0.5s;
@@ -158,8 +155,6 @@ label #sidebar_btn:hover{
     padding: 30px;
     border-radius: 12px;
     gap: 15px;
-    /* min-width: 250px; */
-    /* min-height: 130px; */
     border: 3px solid rgba(255, 255, 255, 0.12);    
 }
   
