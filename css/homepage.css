@@ -162,17 +162,4 @@ label #sidebar_btn:hover{
     transform: rotate(270deg);
 }
   
-@keyframes example {
-    0% {
-      margin-left:0px; 
-    }
-    
-    50% {
-      margin-left:120px; 
-    }
-    
-    100% {
-      margin-left:0px; 
-    }
-    
-}
+

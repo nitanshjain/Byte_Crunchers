@@ -1,23 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
     color: #505962;
+    background-color: #49a51f;
+
 }
 
 
 
-.heading
-{
+.heading{
     font-size: 50px;
     color: rgb(26, 83, 21);
     position: relative;
-    left: 500px;
-    padding: auto;
-    width: 13%;
+    /* left: 500px; */
+    text-align:center;
+    /* padding: auto; */
+    /* width: 13%; */
 }
 
-.contact
-{
+.contact{
     font-size: 15px;
 }
 
@@ -51,3 +56,5 @@ hr.socket{
     margin-top: 3rem;
 }
   
+/* side bar */
+
