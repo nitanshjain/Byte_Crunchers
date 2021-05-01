@@ -14,6 +14,11 @@ const ProfileSchema = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now
+  },
+  aadharCard: {
+    type: String,
+    unique: true,
+    default: Date.now
   }
 });
 
