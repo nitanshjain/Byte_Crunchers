@@ -1,15 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-
+    font-family: "Open Sans", sans-serif;
 }
 
 section{
-    position: relative;
+    /* position: relative; */
     min-height: 100vh;
-    background: #3ea51f;
+    background: radial-gradient(#28d913, #038a0f, #095001);
     display: flex;
     justify-content: center;
     align-items: center;

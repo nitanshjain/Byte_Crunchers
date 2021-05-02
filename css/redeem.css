@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.42em;
+    color:#A7A1AE;
+    background-color:#1F2739;
+}
+
+header{
+    z-index: 5;
+    position: fixed;
+    background: #408f39;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.right_area .logout_btn{
+    padding: 5px 10px;
+    background: #ffffff;
+    text-decoration: none;
+    float: right;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+
+.right_area .logout_btn:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+.sidebar{
+    background: #274d33;
+    margin-top: 70px;
+    padding-top: 30px;
+    padding-bottom: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+
+
+.sidebar .profile_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar h4{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.sidebar a:hover{
+    background: #1fee0c;
+}
+
+.sidebar i{
+    padding-right: 10px;
+}
+
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color: #1fee0c;
+}
+
+#check:checked ~.sidebar{
+    left: -190px;
+}
+
+#check:checked ~.sidebar a span{
+    display: none;
+}
+
+#check:checked ~.sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.content{
+    margin-left: 250px;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+#check:checked ~ .content{
+    margin-left: 60px;
+}
+
+#check{
+    display: none;
+}
+
+/* sidebar ends */
+ 
+h1{
+    font-size:3em; 
+    font-weight: 300;
+    line-height:1em;
+    text-align: center;
+    color: #079425;
+}
+ 
+/* h2{
+    font-size:1em; 
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    line-height:1em;
+    padding-bottom: 2em;
+    color: #ffffff;
+} */
+ 
+/* h2 a {
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+   text-decoration: none;
+}
+ 
+.blue { color: #185875; }
+.yellow { color: #FFF842; } */
+ 
+.container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #079425;
+}
+ 
+.container td{
+    font-weight: normal;
+    font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119;
+}
+ 
+.container {
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 5% 15%;
+    display: table;
+    padding: 0 0 8em 0;
+}
+ 
+.container td, .container th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left:2%;  
+}
+ 
+ /* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+    background-color: #323C50;
+}
+ 
+ /* Background-color of the even rows */
+.container tr:nth-child(even) {
+    background-color: #2C3446;
+}
+ 
+.container th {
+    background-color: #1F2739;
+}
+ 
+.container td:first-child{ 
+    color: #ffffff; 
+}
+ 
+.container tr:hover {
+    background-color: #464A52;
+    -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+    -moz-box-shadow: 0 6px 6px -6px #0E1119;
+    box-shadow: 0 6px 6px -6px #0E1119;
+}
+ 
+.container td:hover {
+    background-color: #46f800;
+    color: #403E10;
+    font-weight: bold;
+    box-shadow: #217f35 -1px 1px, #217f35 -2px 2px, #217f35 -3px 3px, #217f35 -4px 4px, #217f35 -5px 5px, #217f35 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+button{
+    background-color:#2dcc50; 
+    padding: 2% 5%;
+    cursor: pointer;
+}
+ 
+@media (max-width: 800px) {
+    .container td:nth-child(4),
+    .container th:nth-child(4) { display: none; }
+}
