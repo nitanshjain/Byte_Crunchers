@@ -3,7 +3,7 @@ const config = require('config')
 
 module.exports = function(req,res,next) 
 {
-    const token = req.header('x-auth-token') //'x-auth-token' is the key in POSTMAN
+    const token = req.header('x-auth-token')
 
     if(!token)
     {
