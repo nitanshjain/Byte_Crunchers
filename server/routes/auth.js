@@ -1,13 +1,13 @@
 const express = require('express')
 const router = express.Router()
-const auth = require('../../middleware/auth')
+const auth = require('../middleware/auth')
 const config = require('config')
 const { check,validationResult } = require('express-validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const User = require ('../../models/User')
+const User = require ('../models/User')
 
-//@route    GET api/auth
+//@route    GET auth
 //@desc     Test Route
 //@access   Public
 
@@ -21,7 +21,7 @@ router.get('/',auth, async (req,res)=> {
     }
 })
 
-//@route    POST api/auth
+//@route    POST auth
 //@desc     Authenticate user & get token
 //@access   Public
 

@@ -1,14 +1,16 @@
 const express = require('express')
 const router = express.Router()
 const { check,validationResult } = require('express-validator')
-const User = require('../../models/User')
+const User = require('../models/User')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const config = require('config')
 
-//@route    POST api/users
+//@route    POST /users
 //@desc     Register user route
 //@access   Public
+
+
 
 router.post('/',[
     check('name','Name is required').not().isEmpty(),
