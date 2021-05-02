@@ -3,13 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
 }
 
 section{
-    position: relative;
+    /* position: relative; */
     min-height: 100vh;
-    background: #3ea51f;
+    background: radial-gradient(#28d913, #038a0f, #095001);
     display: flex;
     justify-content: center;
     align-items: center;
